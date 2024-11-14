@@ -15,4 +15,4 @@ async def ident(user_id: int) -> dict:
     return {'message': f'Вы вошли как пользователь № {user_id}'}
 @app.get('/user')
 async def users_inform(username: str, age: int) -> dict:
-    return {'massage':f'Информация о пользователе. Имя: {username}, Возраст: {age}.'}
+    return {'message':f'Информация о пользователе. Имя: {username}, Возраст: {age}.'}
